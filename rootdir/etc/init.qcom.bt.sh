@@ -29,6 +29,8 @@
 LOG_TAG="qcom-bluetooth"
 LOG_NAME="${0}:"
 
+hciattach_pid=""
+
 loge ()
 {
   /system/vendor/bin/log -t $LOG_TAG -p e "$LOG_NAME $@"
